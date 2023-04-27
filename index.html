@@ -355,19 +355,19 @@
 
                 
 
-                <div class="content-img-fixed invisible" id="foto6">
+                <div class="content-img-fixed visible">
                   <div>
                     <img src="image1.png">
                   </div>
                 </div>
 
-                <div class="content-img-fixed invisible" id="foto7">
+                <div class="content-img-fixed invisible">
                   <div>
                     <img src="image2.png">
                   </div>
                 </div>
 
-                <div class="content-img-fixed invisible" id="foto8">
+                <div class="content-img-fixed invisible">
                   <div>
                     <img src="image3.png">
                   </div>
@@ -664,8 +664,7 @@
       }
 
       .text-fixed {
-        width: 50%;
-        font-family: Benton;
+        width: 100%;
         position: absolute;
         top: 0;
         /*left: 50%;
@@ -721,7 +720,7 @@
         height: 100vh;
         display: flex;
         align-items: center;
-        justify-content: flex-end;
+        justify-content: center;
         opacity: 0;
         transition: all 1s;
       }
@@ -835,15 +834,6 @@
         .content-img-fixed .flourish-embed iframe {
             width: 100% !important;
         }
-        #foto7 video {
-            min-height: 100%;
-        }
-        #foto8 div {
-            max-width: 100%;
-        }
-        #foto8 img {
-            width: 100%;
-        }
         .texto-lr {
             margin: 0 auto 20px;
             padding: 0 15px;
@@ -855,15 +845,6 @@
 
       }
       @media (min-width: 769px) {
-         #foto7 video {
-        max-width: 50%;
-        }
-        #foto8 div {
-            max-width: 50%;
-        }
-        #foto8 img {
-            width: 80%;
-        }
       }
     .total-box {
 	    text-align: center;
