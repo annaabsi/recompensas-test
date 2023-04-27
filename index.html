@@ -932,8 +932,10 @@
     .texto-lr {
         max-width: 750px;
         margin: 0 auto 25px;
-        line-height: 1.38;
+        line-height: 1.8;
         display: block;
+        font-size: 16px;
+        padding: 0px 10px;
     }
     .texto-lr small {
         text-align: center;
@@ -1019,17 +1021,17 @@
           elementsFixed.forEach((t, i) => {
             if (
               ((init[i] = elementsFixed[i].offsetTop),
-              (end[i] =
-                elementsFixed[i].offsetTop +
-                elementsFixed[i].offsetHeight -
-                window.innerHeight),
-              e - diff > init[i])
+                (end[i] =
+                  elementsFixed[i].offsetTop +
+                  elementsFixed[i].offsetHeight -
+                  window.innerHeight),
+                e - diff > init[i])
             )
               if (e - diff < end[i]) {
                 if (
                   (blockFixed[i].classList.remove("absolute_bottom"),
-                  blockFixed[i].classList.add("fixed_top"),
-                  imgsFixed[i])
+                    blockFixed[i].classList.add("fixed_top"),
+                    imgsFixed[i])
                 )
                   for (var o = 0; o < imgsFixed[i].length; o++)
                     if (e - diff > initImg[i][o] && e - diff < endImg[i][o]) {
@@ -1039,7 +1041,7 @@
                           "video"
                         )).autoplay = !0),
                           (!playing || (playing && s.paused)) &&
-                            (s.play(), (playing = !0));
+                          (s.play(), (playing = !0));
                       else
                         (s = elementsFixed[i].querySelectorAll(
                           "video"
