@@ -821,9 +821,26 @@ h5.line {
     .text-fixed span {
         width: 90%;
         max-width: 54rem;
-        background-color: rgb(255, 255, 255, 0.9);
-        border: 1px solid #ccc;
+        border: 1px solid #000;
         padding: 2rem;
+        border-radius: 1px;
+    }
+    .comments {
+
+      opacity: 0.9;
+      line-height: 26px;
+      background-color: #000;
+      color: white;
+      padding: 24px 16px;
+      border-radius: 2px;
+      font-size: 1.5em;
+      font-style: italic;
+
+      }
+
+    .comments .red {
+      color: #EB052B;
+      font-weight: 400;
     }
     .text-fixed span.b-text {
         line-height: 1;
@@ -862,7 +879,8 @@ h5.line {
           margin: 0;
           width: 100%;
           max-width: 100%;
-          padding: 15px;
+          
+       
         }
 
         .text-fixed span strong {
@@ -871,6 +889,10 @@ h5.line {
         .absolute_bottom {
           width: 100vw;
         }
+
+        /* style for comments text */
+      
+
     }
 </style>
 <header id="w-header">
@@ -930,17 +952,17 @@ h5.line {
                     </p>
 
                     <p class="texto-solo">
-                        <span>Entre el 2012 a marzo del 2023 se reportan 1.411 feminicidios y 2.749 tentativas.</span>
+                        <span class="comments">Entre el 2012 a marzo del 2023 se reportan <i class="red">1.411 feminicidios y 2.749 tentativas.</i></span>
                     </p>
 
                     <p class="texto-solo">
-                        <span>30 acusados de estos delitos figuran como los más buscados en el Programa de
-                            Recompensas.</span>
+                        <span class="comments"><i class="red">30 acusados</i> de estos delitos figuran como los <i class="red">más buscados</i> en el <i class="red">Programa de
+                            Recompensas.</i></span>
                     </p>
 
                     <p class="texto-solo">
-                        <span>Los prófugos de la justicia por violencia de género que se encuentran en este sistema tienen
-                            entre 1 hasta 7 años sin ser capturados.</span>
+                        <span class="comments">Los prófugos de la justicia por violencia de género que <i class="red">se encuentran</i> en este <i class="red">sistema</i> tienen
+                          entre<i class="red"> 1 hasta 7 años sin ser capturados.</i></span>
                     </p>
                 </div>
             </div>
