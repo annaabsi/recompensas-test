@@ -780,11 +780,13 @@ h5.line {
         justify-content: center;
         opacity: 0;
         transition: all 1s;
+        
     }
     
     .content-img-fixed img {
         max-height: 100%;
         width: 100%;
+        
     }
 
     .content-img-fixed:nth-child(1) {
@@ -872,9 +874,36 @@ h5.line {
     }
 
     @media (max-width: 768px) {
-        #content{
-            margin-top: -30vh !important;
+
+        .image1{
+            background: url("./foto.jpg");
+            
         }
+
+        .image2{
+            background: url("./foto2.jpg");
+            
+        }
+
+        .image3{
+            background: url("./foto3.jpg");
+            transition: background 3s ease-in;
+        }
+        .visible {
+        opacity: 1 !important;
+        position: absolute;
+        top: 0;
+        transition: opacity 0.9s ease-in-out;
+    }
+
+        .content-img-fixed img {
+          visibility: hidden;
+        }
+
+
+        /* #content{
+            margin-top: -30vh !important;
+        } */
 
         .contentFixedElement img {
           padding-top: 40px;
@@ -882,6 +911,7 @@ h5.line {
         .content-img-fixed,
         .contentFixedElement,
         .img-block-fixed {
+            height: 100vh;
           width: 100%;
           justify-content: center;
         }
@@ -943,16 +973,16 @@ h5.line {
         <div>
             <div class="contentFixedElement" id="fixedContent1" style="height: 8919px;">
                 <div class="block-fixed">
-                    <div class="container-imgs">
-                        <div class="content-img-fixed visible">
+                    <div class="container-imgs ">
+                        <div class="content-img-fixed visible image1">
                             <img src="image1.png">
                         </div>
 
-                        <div class="content-img-fixed invisible">
+                        <div class="content-img-fixed invisible image2">
                             <img class="padding-parallax-img" src="image2.png">
                         </div>
 
-                        <div class="content-img-fixed invisible">
+                        <div class="content-img-fixed invisible image3">
                             <img class="padding-parallax-img" src="image3.png">
                         </div>
                     </div>
