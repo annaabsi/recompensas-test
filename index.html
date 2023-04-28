@@ -776,6 +776,11 @@ h5.line {
         opacity: 0;
         transition: all 1s;
     }
+    
+    .content-img-fixed img {
+        max-height: 100%;
+        width: 100%;
+    }
 
     .content-img-fixed:nth-child(1) {
         opacity: 1;
@@ -927,21 +932,15 @@ h5.line {
                 <div class="block-fixed">
                     <div class="container-imgs">
                         <div class="content-img-fixed visible">
-                            <div>
-                                <img src="image1.png">
-                            </div>
+                            <img src="image1.png">
                         </div>
 
                         <div class="content-img-fixed invisible">
-                            <div>
-                                <img src="image2.png">
-                            </div>
+                            <img src="image2.png">
                         </div>
 
                         <div class="content-img-fixed invisible">
-                            <div>
-                                <img src="image3.png">
-                            </div>
+                            <img src="image3.png">
                         </div>
                     </div>
                 </div>
@@ -967,7 +966,7 @@ h5.line {
                 </div>
             </div>
         </div>
-        <div style="margin-top: -50px;">
+        <div style="margin-top: 0px;">
             <div class="texto-lr">
                 <h5 class="legend">Por: Gloria Purizaca</h5>
                 <h5 class="legend line">Publicado el 27 de abril de 2023</h5>
